@@ -16,9 +16,9 @@ regBtn.addEventListener('click', function() {
 
     if (!nombre || !apellido || !email || !contraseña || !repetircontraseña || !terminos) {
       showAlertError();
-    } else if (password1.length < 6) {
+    } else if (contraseña.length < 6) {
       showAlertError();
-    } else if (password1 !== password2) {
+    } else if (contraseña !== repetircontraseña) {
       showAlertError();
     } else {
       showAlertSuccess();
